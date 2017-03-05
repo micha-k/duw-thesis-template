@@ -1,0 +1,46 @@
+%
+% Document class
+\documentclass[a4paper,
+			  10pt]{scrreprt}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Blind text for demonstration purposes only
+\usepackage{lipsum}
+
+%
+% Layout
+
+% Page format requirements
+\usepackage[left=3cm,
+			right=5cm,
+			top=2cm,
+			bottom=2cm,
+			includeheadfoot]{geometry}
+
+% Line spacing requirements
+\usepackage[onehalfspacing]{setspace}
+
+% Remove inset on new paragraphs
+\setlength{\parindent}{0pt}
+
+% Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[L]{Titel}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[R]{\thepage} %Seitennummer
+\renewcommand{\footrulewidth}{0.0pt} 
+
+%
+% Document Body
+\begin{document} 
+
+\lipsum
+
+
+\end{document} 
