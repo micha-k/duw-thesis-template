@@ -32,7 +32,7 @@
 \pagestyle{fancy}
 \renewcommand*{\chapterpagestyle}{fancy}
 \fancyhf{} 
-\fancyhead[L]{Titel}
+\fancyhead[L]{Titel der Thesis}
 \fancyhead[C]{}
 \fancyhead[R]{}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -46,10 +46,13 @@
 % title page
 \include{pages_special/title_page}
 
-% declaration
+% declaration of not doing the Guttenberg
 \include{pages_special/affidavit}
 
-\lipsum
+% table of contents
+\include{pages_special/toc}
 
+% dummy structure - include things from the pages_text folder
+\input{pages_special/dummy}
 
 \end{document} 
