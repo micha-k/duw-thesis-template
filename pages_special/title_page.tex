@@ -1,0 +1,31 @@
+% change global page format for titlepage
+\newgeometry{left=2.5cm,
+			right=2.5cm,
+			top=2cm,
+			bottom=2cm}
+
+% Title page content
+\begin{titlepage}
+	\centering
+	{\Large Max Mustermann, 1234567890\par}
+	\vspace{0.5cm}
+	\includegraphics[width=0.8\textwidth]{images_layout/logo_shb.png}\par
+
+	\vspace{1.5cm}
+	{\huge\bfseries Dies ist der Titel der Arbeit: Er kann ggf. etwas länger sein; Nicht schlimm, wenn es drei Zeilen werden\par}	
+	
+	\vspace{2cm}
+	{\scshape\Large Master-Thesis\par}
+	\vspace{0.5cm}
+	{\scshape\Large zur Erlangung des akademischen Grades\par}
+	\vspace{0.5cm}
+	{\scshape\Large Master of Business Administration \par}	
+	
+	\vfill
+
+	{\large Betreuer: Prof. Dr. Abc Defghij\par}
+	{\large Datum der Einreichung: 01.01.2017\par}
+\end{titlepage}
+
+% restore format to global
+\restoregeometry
