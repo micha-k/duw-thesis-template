@@ -39,6 +39,11 @@
 \fancyfoot[R]{\thepage}
 \renewcommand{\footrulewidth}{0.0pt} 
 
+% new chapter shall not use that much space
+\RedeclareSectionCommand[beforeskip=0pt,
+afterskip=1cm]{chapter}
+
+
 %
 % Reference Management
 % https://en.wikibooks.org/wiki/LaTeX/More_Bibliographies
